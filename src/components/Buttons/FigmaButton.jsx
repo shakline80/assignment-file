@@ -1,4 +1,11 @@
-import FigmaIcon from '../Icons/FigmaIcon';
+
+import FimgaImg from '../../assets/figma.png';
+
+const FigmaIcon = () => (
+   <img className='w-4 mr-2' src={FimgaImg} alt="figma icon" />
+);
+
+
 
 const FigmaButon = ({ text = "View On Github", href = "#" }) => {
   return (
@@ -8,6 +15,7 @@ const FigmaButon = ({ text = "View On Github", href = "#" }) => {
       rel="noopener noreferrer"
       className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
     >
+        
         <FigmaIcon />
 
       {text}
